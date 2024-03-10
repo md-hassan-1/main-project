@@ -1,0 +1,166 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    height: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.564);
+    background-color:rgba(0, 0, 0, 0);
+    position: sticky;
+  
+}
+.color{
+    color: orange;
+    /* color: transparent; */
+}
+#hero{
+  /* display: block; */
+  /* margin-top: 80px; */
+  padding-top: 50px;
+}
+
+.overlay-inner{
+    width: 100%;
+    min-height: 290px;
+    background-color: rgba(66, 22, 169, 0.871);
+}
+ .overlay{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.33);
+  }
+  .overlay-inner-inner{
+    width: 100%;
+    min-height: 390px;
+    background-color: rgba(169, 22, 44, 0.871);
+    
+  }
+  .img{
+    width: 230px;
+    height: 330px;
+  }
+  .heading{
+    display: block;
+     padding-top: 55px;
+  }
+  .size{
+   
+    font-size: 7px;
+    letter-spacing: 1.2px;
+    margin-top: -6px;
+
+  }
+  .size-1{
+    font-size: 6px;
+    letter-spacing: 5px;
+    margin-top: -4px;
+
+  }
+  .size-3{
+    font-size: 6px;
+    letter-spacing: 2px;
+    margin-top: -6px;
+
+  }
+  .row-1{
+    padding: 50px;
+  }
+  .size-2{
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    /* margin-top: 5px; */
+
+  }
+  .head{
+   line-height: 0.8;
+  }
+  .head-2{
+    margin-top: -8px;
+
+  }
+  .box-1{
+    padding: 45px;
+
+  }
+  .efect:hover u{
+    text-decoration: none
+  }
+    p .line{
+    width: 100%;
+    height: 5px;
+    background-color: green;
+   }
+   .item-7{
+    position: relative;
+    padding-top: 280px;
+    
+   }
+   .overlay-6{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* min-height: 430px; */
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.07);
+    /* position: sticky; */
+
+   }
+   .outer{
+    background-color:rgba(0, 0, 0,0.0);
+   }
+   .item-7{
+    line-height: 1.3;
+   }
+   .item-9{
+    animation: slide 1s ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+   }
+   @keyframes slide {
+     from{
+      transform: translateX(0px);
+     }
+     to{
+      transform: translateX(-400px);
+
+     }
+
+   }
+   .move{
+    margin-top: 100px;
+    margin-bottom: -50px;
+   }
+   #move-2{
+    margin-right: 100px;
+   }
+   #move-1{
+    margin-left: 100px;
+   }
+   .style{
+    color: rgba(245, 245, 245, 0.6);
+    transition: 500ms;
+   }
+   .style:hover{
+    color: white;
+   }
+   #canva{
+    display: none;
+    
+   }
+   @media (max-width:1020px){
+    #tem{
+      display:none;
+    }
+    #canva{
+      display: block;
+    }
+    
+   }
+  
+
