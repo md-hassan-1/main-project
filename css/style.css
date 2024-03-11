@@ -154,10 +154,7 @@
     
    }
 
-   #child:hover{
-    color: green;
-
-   } 
+  
    #inner-child{
     width: 0%;
     height: 5px;
@@ -182,10 +179,7 @@
    }
    
 
-    /* .hover-1:hover #inner-child{
-    width: 100%;
-    
-   } */
+   
 
    @media (max-width:1020px){
     #tem{
