@@ -1,10 +1,15 @@
 
 let nav = document.querySelector("#nav")
-         window.addEventListener("scroll",() => {
-        setInterval(function(){
-            nav.style.backgroundColor="rgba(0, 0, 0, 1)";
-        },300)    
-})
+         window.addEventListener("scroll",()=>{
+            if(window.scrollY >= 50){
+                nav.classList.add('nav-scroll')
+            }else if(window.scrollY < 50){
+                nav.classList.remove('nav-scroll')
+
+            }
+
+         })
+
 
 let input1 = document.querySelector("#name")
 let input2 = document.querySelector("#email")
@@ -20,7 +25,8 @@ form.addEventListener("submit", function(e){
     salect.value=''
 
     let take = {name:input1.value,email:input2.value}
-    take = JSON.stringify(take)
+    take = JSON.parse(take)
+    // take =take.split(",")
 
    
     

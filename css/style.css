@@ -7,9 +7,17 @@
 #nav{
     height: 80px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.564);
-    background-color:rgba(0, 0, 0, 0);
     position: sticky;
+   
   
+}
+.nav-scroll{
+  transition: 0.5s;
+}
+.nav-scroll{
+  background-color:rgba(0, 0, 0, 0.904);
+
+
 }
 .color{
     color: orange;
