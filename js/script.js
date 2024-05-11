@@ -41,29 +41,12 @@ form.addEventListener("submit", function(e){
     input2.value=''
     
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-   
-    
- 
+$("#slick").slick({
+         slidesToShow: 2,
+      slidesToScroll: 1,
+       dots: true,
+       infinite: false,
+       // variableWidth: true,
+      
+        
+    })

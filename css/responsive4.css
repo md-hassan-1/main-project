@@ -1,0 +1,25 @@
+@media (max-width:1200px){
+    .cards{
+        height: 170px ;
+        /* border: 2px solid green; */
+        flex: 3 !important;
+        /* width: 50% !important; */
+        flex-wrap: wrap;
+        padding: 10px 0px !important;
+       
+    
+    }
+    #nav_1{
+        padding: 10px;
+    }
+    .inner-card{
+        border-radius: 0%;
+    }
+    #item-2{
+        width: 900px;
+        margin: auto;
+        flex-wrap: wrap;
+        /* flex: 2; */
+    }
+
+}

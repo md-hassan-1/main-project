@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Project</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="bootstrap.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,7 +25,7 @@
   .item-1 {
     background-image: url("images/baner.jpg");
     width: 100%;
-     min-height: 290px;
+    min-height: 290px;
     background-position: center;
     background-size: cover;
   }
@@ -37,7 +39,7 @@
   }
 
   .item-5 {
-    background-image: url("images/the -lady-4.jpg");
+    background-image: url("images/the-lady-4.jpg");
     width: 100%;
     height: 550px;
     background-position: center;
@@ -45,7 +47,7 @@
   }
 
   header{
-    background-image: url("images/the-man.jpg");
+    background-image: url("images/the-man-1.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -56,13 +58,17 @@
    
   }
 
-  .back-img {
+ 
+
+  .back-img{
     background-image: url("images/back-img.png");
     background-size: cover;
     background-position: center;
-    padding-top: 200px;
+    padding-top: 400px;
+    bottom: 0;
     width: 24%;
     min-height: 430px;
+    /* background-color: black; */
 
   
 
@@ -77,15 +83,15 @@
   <header class="">
     <div class="overlay">
 
-      <nav class="navbar  navbar-expand  navbar-light fixed-top" id="nav" >
+      <nav class="navbar  navbar-expand  navbar-light fixed-top"  id="nav" >
         <div class="container d-flex ">
 
 
-
+<!-- <img src= alt=""> -->
 
           <a class="navbar-brand text-white fs-3 fw-semibold" href="#">MD Hassan</a>
 
-         
+         <!-- <img src= alt=""> -->
 
 
           <div class="collapse navbar-collapse">   
@@ -95,16 +101,16 @@
                 <a class="nav-link text-white fs-5 fw-semibold  mt-1 dropdown-toggle" data-bs-toggle="dropdown"  href="#">Home</a>
                 <h1 id="inner-child_1"></h1>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">home 01</a></li>
-                  <li><a class="dropdown-item" href="#">home 02</a></li>
-                  <li><a class="dropdown-item" href="#">home 03</a></li>
+                  <li><a class="dropdown-item" href="index2.html">home 01</a></li>
+                  <li><a class="dropdown-item" href="index3.html">home 02</a></li>
+                  <li><a class="dropdown-item" href="index4.html">home 03</a></li>
                 </ul>
 
                 
               </li>
               <li class="nav-item mx-1 dropdown" id="parent-1">
                 <a class="nav-link text-white fs-5 fw-bold mt-1 mx-1 dropdown-toggle" data-bs-toggle="dropdown" href="#">Service</a>
-                <h1 id="inner-child"></h1>
+                <h1 id="inner-child"></h1> 
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">service 01</a></li>
                   <li><a class="dropdown-item" href="#">service 02</a></li>
@@ -154,7 +160,7 @@
         </div>
       </nav>
 
-      <div class="container   pb-5 "  id="hero"   >
+      <div class="container   pb-5  mt-5"  id="hero"   >
         <div class="row mt-5">
           <div class="col-md-12 col-lg-8 col-sm-12 col-12 mt-5 ">
 
@@ -178,7 +184,7 @@
                 <input type="email" class="form-control p-2 bg-light" id="email" placeholder="Enter your Email" required>
               </div>
               <div class="mb-3">
-                <select name="" id="select " class="form-select p-2 bg-light" id="salect">
+                <select name="" id="select " class="form-select p-2 bg-light" id="salect" onchange="selected(this)" >
                   <option value="">I interested in...</option>
                   <option value="coloribri creative object">coloribri creative object</option>
                   <option value="colibri project">colibri project</option>
@@ -245,7 +251,6 @@
           </svg>
           <!-- <i class="fa fa-database text-warning fs-2" aria-hidden="true"></i> -->
             <h3 class="text-white ms-5 z-0">construction</h3>
-        
         </div>
       </div>
 
@@ -259,7 +264,7 @@
         <div class="rounded-5 bg-light ">
           <div class="row ">
             <div class="col-md-4  rounded-start-3 rounded-end-0 ">
-              <a href=""><img src="images/the-lady.jpg " class="img-fluid rounded-start-3 rounded-end-0" alt=""></a>
+              <a href=""><img src="images/the-lady-1.jpg " class="img-fluid rounded-start-3 rounded-end-0" alt=""></a>
             </div>
             <div class="col-md-8  py-4 px-5" >
               <h3 class="">counsulting</h3>
@@ -273,7 +278,7 @@
         <div class="rounded-5 bg-light ">
           <div class="row ">
             <div class="col-md-4  rounded-start-3 rounded-end-0  " >
-              <a href=""><img src="images/the-phone.jpg " class="img-fluid rounded-start-3 rounded-end-0" alt=""></a>
+              <a href=""><img src="images/the-mobile.jpg " class="img-fluid rounded-start-3 rounded-end-0" alt=""></a>
             </div>
             <div class="col-md-8 py-4 px-5">
               <h3>IOS Development</h3>
@@ -329,7 +334,6 @@
               <h1 class="text-white">Want to get a free  consultation?</h1>
             </div>
             <div class="col-md-6 col-lg-3 col-sm-12 col-12 p-5 align-content-center "  data-aos="fade-up" data-bs-ofset="800">
-              <!-- <div class="p-3"> -->
                 <a href=""><i class="bx bxs-phone fs-5 text-white mb-3 pt-3"> &nbsp;+91123-958-56</i></a>
                 <br>
                 <a href=""><i class="bx bxs-envelope fs-5 text-white"> &nbsp;help@hasan.com</i></a>
@@ -364,7 +368,7 @@
       </div>
       <div class="col-md-6 p-4">
         <div class="p-4">
-          <img src="images/graph.png" class="img-fluid " alt="">
+          <img src="images/the-graph.png" class="img-fluid " alt="">
         </div>
       </div>
     </div>
@@ -419,7 +423,7 @@
         <div class="col-md-12 col-lg-6 col-12 col-sm-12 p-5  position-relative"  data-aos="fade-up" data-bs-ofset="800">
           <div class=" p-4 ">
             <img src="images/img-1.jpg" class="img-fluid rounded-5" alt="">
-            <img src="images/img-2.jpg" class="img-fluid img position-absolute rounded-5  top-0  end-0  " alt="">
+            <img src="images/img-3.jpg" class="img-fluid img position-absolute rounded-5  top-0  end-0  " alt="">
           </div>
         </div>
       </div>
@@ -509,10 +513,10 @@
 
 
     <div class="item-5" >
-      <div class="h-100 w-100  d-flex align-items-center justify-content-center  " >
+      <div class="h-100 w-100  d-flex align-items-center justify-content-center" >
         <!-- <button onclick="watch()" class="btn btn-success">watch</button> -->
         <!-- <button class="text-center">watch</button> -->
-        <button class="bg-transparent border-0  "  type="button" data-bs-target="#mymodal" data-bs-toggle="modal"><img src="images/play-button.png" alt="" class="w-25 h-25 "></button>
+        <button class="bg-transparent border-0  "  type="button" data-bs-target="#mymodal" data-bs-toggle="modal"><img src="images/btn.png" alt="" class="w-25 h-25 "></button>
       </div>
         <div class="modal fade  modal-fade  " id="mymodal" >
           <div class="modal-dialog modal-dialog-centered modal-lg  ">
@@ -523,10 +527,11 @@
                     
                       <!-- </div> --> 
                       <div  class="d-flex justify-content-end align-items-end ">
-                        <button type="button" class="btn btn-close me-3 mb-0 "   data-bs-dismiss="modal"></button> 
+                        <button type="button" class="btn btn-close me-3 mb-0  bg-light"   data-bs-dismiss="modal"></button> 
                       </div>
              
                         <div class="modal-body h-100 ">
+                          
                          
                           <!-- <video controls   class=" video-js" style="width: 100%; " data-setup="{}" preload="">
                             <source src="videos/digital.mp4" class="img" type="video/mp4"> 
@@ -770,25 +775,206 @@
     </div>
   </div>
 
-
-
-  <div class="container-fluid px-0 mt-5 mb-5   item-7 bg-black ">
+<!--  
+  <div class="container-fluid px-0 " id="middle">
     <div class="back-img">
-      <div class="overlay-6 p-5">
-        <div class="container p-2 mt-5 ">
-          <div class="row p-5 mb-5">
+      <div id="shadow">
+
+   <span class="text-white">this is the heading of the page</span> -->
+      <!-- </div>
+    
+  </div>
+
+  </div>  -->
+
+
+
+   <div class="container-fluid px-0 mt-5 mb-5   item-7 bg-black "> 
+    <div class="back-img">
+       <div class="overlay-6">
+        <div class="container   inner-parent">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-4 col-12  p-3  "  data-aos="fade-up" data-bs-ofset="800">
+              <div class="">
+                <h1 class="text-white fw-bold " >what people  say about your company</h1>
+
+              </div>
+
+            </div>
+            <div class="col-md-12 col-lg-8 col-12 col-sm-12   p-3"  data-aos="fade-up" data-bs-ofset="800">
+              <div class="container " id="select">
+                <div class="row" id="slick">
+                  <div class=" p-3" id="inner-item">
+                    <div class="p-4 bg-dark  rounded-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 mb-4" width="90" height="16"
+                        fill="none">
+                        <path fill="#FFBB38"
+                          d="m8.595 0 2.656 5.266 5.94.85-4.298 4.096L13.907 16l-5.312-2.734L3.283 16l1.015-5.788L0 6.116l5.94-.85L8.594 0ZM26.798 0l2.656 5.266 5.94.85-4.299 4.096L32.11 16l-5.312-2.734L21.486 16l1.014-5.788-4.298-4.096 5.94-.85L26.798 0ZM45 0l2.656 5.266 5.94.85-4.298 4.096L50.312 16 45 13.266 39.688 16l1.014-5.788-4.298-4.096 5.94-.85L45 0ZM63.202 0l2.656 5.266 5.94.85-4.298 4.096L68.514 16l-5.312-2.734L57.89 16l1.014-5.788-4.298-4.096 5.94-.85L63.202 0ZM81.404 0l2.656 5.266 5.94.85-4.298 4.096L86.716 16l-5.312-2.734L76.092 16l1.014-5.788-4.297-4.096 5.94-.85L81.403 0Z">
+                        </path>
+                      </svg>
+                      <br>
+                      <div class="d-flex ">
+                        <img src="images/the-man-3.jpg" class="w-25 h-25 rounded-circle mt-3" alt="">
+                        <h4 class="pt-4 ps-4 text-white">Anthoni allisson <br>
+                          <p class="fw-light h6">senior Mareketing specilist <br>unweb Inc </p>
+                        </h4>
+                      </div>
+                      <h5 class="text-white pt-4 pb-4 item-7">its don't light appear fifth face <br> haven night
+                        spreet shall tree of <br> life over unto in earth seonde <br> first two water female </h5>
+
+                    </div>
+
+                  </div>
+                  <div class="p-3"  id="inner-item">
+                    <div class="p-4 bg-dark  rounded-5  ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 mb-4" width="90" height="16"
+                        fill="none">
+                        <path fill="#FFBB38"
+                          d="m8.595 0 2.656 5.266 5.94.85-4.298 4.096L13.907 16l-5.312-2.734L3.283 16l1.015-5.788L0 6.116l5.94-.85L8.594 0ZM26.798 0l2.656 5.266 5.94.85-4.299 4.096L32.11 16l-5.312-2.734L21.486 16l1.014-5.788-4.298-4.096 5.94-.85L26.798 0ZM45 0l2.656 5.266 5.94.85-4.298 4.096L50.312 16 45 13.266 39.688 16l1.014-5.788-4.298-4.096 5.94-.85L45 0ZM63.202 0l2.656 5.266 5.94.85-4.298 4.096L68.514 16l-5.312-2.734L57.89 16l1.014-5.788-4.298-4.096 5.94-.85L63.202 0ZM81.404 0l2.656 5.266 5.94.85-4.298 4.096L86.716 16l-5.312-2.734L76.092 16l1.014-5.788-4.297-4.096 5.94-.85L81.403 0Z">
+                        </path>
+                      </svg>
+                      <br>
+                      <div class="d-flex ">
+                        <img src="images/the-man-3.jpg" class="w-25 h-25 rounded-circle mt-3" alt="">
+                        <h4 class="pt-4 ps-4 text-white">Anthoni allisson <br>
+                          <p class="fw-light h6">senior Mareketing specilist <br>unweb Inc </p>
+                        </h4>
+                      </div>
+                      <h5 class="text-white pt-4 pb-4 item-7">its don't light appear fifth face <br> haven night
+                        spreet shall tree of <br> life over unto in earth seonde <br> first two water female </h5>
+
+                    </div>
+
+                  </div>
+                    <div class=" p-3" id="inner-item">
+                    <div class="p-4 bg-dark  rounded-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 mb-4" width="90" height="16"
+                        fill="none">
+                        <path fill="#FFBB38"
+                          d="m8.595 0 2.656 5.266 5.94.85-4.298 4.096L13.907 16l-5.312-2.734L3.283 16l1.015-5.788L0 6.116l5.94-.85L8.594 0ZM26.798 0l2.656 5.266 5.94.85-4.299 4.096L32.11 16l-5.312-2.734L21.486 16l1.014-5.788-4.298-4.096 5.94-.85L26.798 0ZM45 0l2.656 5.266 5.94.85-4.298 4.096L50.312 16 45 13.266 39.688 16l1.014-5.788-4.298-4.096 5.94-.85L45 0ZM63.202 0l2.656 5.266 5.94.85-4.298 4.096L68.514 16l-5.312-2.734L57.89 16l1.014-5.788-4.298-4.096 5.94-.85L63.202 0ZM81.404 0l2.656 5.266 5.94.85-4.298 4.096L86.716 16l-5.312-2.734L76.092 16l1.014-5.788-4.297-4.096 5.94-.85L81.403 0Z">
+                        </path>
+                      </svg>
+                      <br>
+                      <div class="d-flex ">
+                        <img src="images/the-man-3.jpg" class="w-25 h-25 rounded-circle mt-3" alt="">
+                        <h4 class="pt-4 ps-4 text-white">Anthoni allisson <br>
+                          <p class="fw-light h6">senior Mareketing specilist <br>unweb Inc </p>
+                        </h4>
+                      </div>
+                      <h5 class="text-white pt-4 pb-4 item-7">its don't light appear fifth face <br> haven night
+                        spreet shall tree of <br> life over unto in earth seonde <br> first two water female </h5>
+
+                    </div>
+
+                  </div>
+                  <div class="p-3"  id="inner-item">
+                    <div class="p-4 bg-dark  rounded-5  ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 mb-4" width="90" height="16"
+                        fill="none">
+                        <path fill="#FFBB38"
+                          d="m8.595 0 2.656 5.266 5.94.85-4.298 4.096L13.907 16l-5.312-2.734L3.283 16l1.015-5.788L0 6.116l5.94-.85L8.594 0ZM26.798 0l2.656 5.266 5.94.85-4.299 4.096L32.11 16l-5.312-2.734L21.486 16l1.014-5.788-4.298-4.096 5.94-.85L26.798 0ZM45 0l2.656 5.266 5.94.85-4.298 4.096L50.312 16 45 13.266 39.688 16l1.014-5.788-4.298-4.096 5.94-.85L45 0ZM63.202 0l2.656 5.266 5.94.85-4.298 4.096L68.514 16l-5.312-2.734L57.89 16l1.014-5.788-4.298-4.096 5.94-.85L63.202 0ZM81.404 0l2.656 5.266 5.94.85-4.298 4.096L86.716 16l-5.312-2.734L76.092 16l1.014-5.788-4.297-4.096 5.94-.85L81.403 0Z">
+                        </path>
+                      </svg>
+                      <br>
+                      <div class="d-flex ">
+                        <img src="images/the-man-3.jpg" class="w-25 h-25 rounded-circle mt-3" alt="">
+                        <h4 class="pt-4 ps-4 text-white">Anthoni allisson <br>
+                          <p class="fw-light h6">senior Mareketing specilist <br>unweb Inc </p>
+                        </h4>
+                      </div>
+                      <h5 class="text-white pt-4 pb-4 item-7">its don't light appear fifth face <br> haven night
+                        spreet shall tree of <br> life over unto in earth seonde <br> first two water female </h5>
+
+                    </div>
+
+                  </div>
+                  <!-- <div class="col-md-12 slide col-lg-6 col-sm-12 col-12  p-2">
+                    <div class="p-4 bg-dark  rounded-5  ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 mb-4" width="90" height="16"
+                        fill="none">
+                        <path fill="#FFBB38"
+                          d="m8.595 0 2.656 5.266 5.94.85-4.298 4.096L13.907 16l-5.312-2.734L3.283 16l1.015-5.788L0 6.116l5.94-.85L8.594 0ZM26.798 0l2.656 5.266 5.94.85-4.299 4.096L32.11 16l-5.312-2.734L21.486 16l1.014-5.788-4.298-4.096 5.94-.85L26.798 0ZM45 0l2.656 5.266 5.94.85-4.298 4.096L50.312 16 45 13.266 39.688 16l1.014-5.788-4.298-4.096 5.94-.85L45 0ZM63.202 0l2.656 5.266 5.94.85-4.298 4.096L68.514 16l-5.312-2.734L57.89 16l1.014-5.788-4.298-4.096 5.94-.85L63.202 0ZM81.404 0l2.656 5.266 5.94.85-4.298 4.096L86.716 16l-5.312-2.734L76.092 16l1.014-5.788-4.297-4.096 5.94-.85L81.403 0Z">
+                        </path>
+                      </svg>
+                      <br>
+                      <div class="d-flex ">
+                        <img src="images/the-man-3.jpg" class="w-25 h-25 rounded-circle mt-3" alt="">
+                        <h4 class="pt-4 ps-4 text-white">Anthoni allisson <br>
+                          <p class="fw-light h6">senior Mareketing specilist <br>unweb Inc </p>
+                        </h4>
+                      </div>
+                      <h5 class="text-white pt-4 pb-4 item-7">its don't light appear fifth face <br> haven night
+                        spreet shall tree of <br> life over unto in earth seonde <br> first two water female </h5>
+
+                    </div>
+
+                  </div> -->
+                  <!-- <div class="col-md-12 slide col-lg-6 col-sm-12 col-12  p-2">
+                    <div class="p-4 bg-dark  rounded-5  ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mt-4 mb-4" width="90" height="16"
+                        fill="none">
+                        <path fill="#FFBB38"
+                          d="m8.595 0 2.656 5.266 5.94.85-4.298 4.096L13.907 16l-5.312-2.734L3.283 16l1.015-5.788L0 6.116l5.94-.85L8.594 0ZM26.798 0l2.656 5.266 5.94.85-4.299 4.096L32.11 16l-5.312-2.734L21.486 16l1.014-5.788-4.298-4.096 5.94-.85L26.798 0ZM45 0l2.656 5.266 5.94.85-4.298 4.096L50.312 16 45 13.266 39.688 16l1.014-5.788-4.298-4.096 5.94-.85L45 0ZM63.202 0l2.656 5.266 5.94.85-4.298 4.096L68.514 16l-5.312-2.734L57.89 16l1.014-5.788-4.298-4.096 5.94-.85L63.202 0ZM81.404 0l2.656 5.266 5.94.85-4.298 4.096L86.716 16l-5.312-2.734L76.092 16l1.014-5.788-4.297-4.096 5.94-.85L81.403 0Z">
+                        </path>
+                      </svg>
+                      <br>
+                      <div class="d-flex ">
+                        <img src="images/the-man-3.jpg" class="w-25 h-25 rounded-circle mt-3" alt="">
+                        <h4 class="pt-4 ps-4 text-white">Anthoni allisson <br>
+                          <p class="fw-light h6">senior Mareketing specilist <br>unweb Inc </p>
+                        </h4>
+                      </div>
+                      <h5 class="text-white pt-4 pb-4 item-7">its don't light appear fifth face <br> haven night
+                        spreet shall tree of <br> life over unto in earth seonde <br> first two water female </h5>
+
+                    </div>
+
+                  </div> -->
+
+
+            </div>
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+
+    </div>
+        
+
+        <!-- <div class="container p-2 mt-5 "> 
+          <div class="row mb-5" id="p">
             <div class="col-md-12 col-sm-12 col-lg-4 col-12  p-3"  data-aos="fade-up" data-bs-ofset="800">
               <div class="">
-                <h1 class="text-white fw-bold " >what people <br> say about your company</h1>
+                <h1 class="text-white fw-bold " >what people  say about your company</h1>
               </div>
 
             </div>
             <div class="col-md-12 col-lg-8 col-12 col-sm-12"  data-aos="fade-up" data-bs-ofset="800">
               <div class="carousel slide" id="slide">
-                <div class="carousel-inner ">
+                <div class="carousel-inner "> -->
 
                   <!-- carousel item-1 -->
-                  <div class="carousel-item sticky-top  active">
+                  <!-- <div class="carousel-item sticky-top  active">
                     <div class="container " id="select">
                       <div class="row   p-2">
                         <div class="col-md-12 slide col-lg-6 col-sm-12 col-12  p-2">
@@ -837,10 +1023,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
-                  <!-- crosul item-2 -->
-                  <div class="carousel-item ">
+                   <!--  crosul item-2 -->
+                 <!-- <div class="carousel-item "> 
                     <div class="container ">
                       <div class="row   p-2  ">
                         <div class="col-md-6     p-2" id="">
@@ -852,7 +1038,7 @@
                               </path>
                             </svg>
                             <br>
-                            <div class="d-flex ">
+                            <div class="d-flex">
                               <img src="images/the-lady-5.jpg" class="w-25 h-25 rounded-circle mt-3" alt="">
                               <h4 class="pt-4 ps-4 text-white">
                                 Catherine Daniels <br>
@@ -888,11 +1074,11 @@
                               spirit shall tree of Life over, unto in earth second. First, two waters, female. ”
 
                             </h5>
-                          </div>
+                          </div> -->
                         </div>
                       </div>
                     </div>
-                  </div>
+                 
 
 
 
@@ -907,12 +1093,12 @@
 
 
 
-                </div>
+           
 
-                <div class="carousel-indicators  ">
+                <!-- <div class="carousel-indicators  ">
                   <button data-bs-target="#slide" data-bs-slide-to="0" class="active move"></button>
                   <button data-bs-target="#slide" data-bs-slide-to="1" class="move"></button>
-                </div>
+                </div> 
 
               </div>
             </div>
@@ -924,7 +1110,7 @@
       </div>
     </div>
 
-  </div>
+   </div> -->
 
   <div class="container mt-5    mb-5 me-5">
     <button class="btn btn-light fw-medium "  data-aos="fade-up" data-bs-ofset="800">OUR BLOG</button>
@@ -1106,9 +1292,9 @@
       <li class="nav-item dropdown">
         <a class="nav-link text-black  fs-5 fw-semibold  mx-1 dropdown-toggle" data-bs-toggle="dropdown" href="#">home</a>
         <ul class="dropdown-menu"  >
-          <li><a class="dropdown-item" href="#">home 01</a></li>
-          <li><a class="dropdown-item" href="#">home 02</a></li>
-          <li><a class="dropdown-item" href="#">home 03</a></li>
+          <li><a class="dropdown-item" href="index2.html">home 01</a></li>
+          <li><a class="dropdown-item" href="index3.html">home 02</a></li>
+          <li><a class="dropdown-item" href="index4.html">home 03</a></li>
         </ul>
       </li>
       <li class="nav-item  dropdown">
@@ -1169,10 +1355,22 @@
 
   <script>
 
+     $("#slick").slick({
+    slidesToShow: 1,
+  slidesToScroll: 2,
+  infinite: true,
+variableWidth: true,
+   dots: true,
+  
+    
+})
+
   </script>
 
 
   <script src="bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>

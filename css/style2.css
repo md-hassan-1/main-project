@@ -27,6 +27,32 @@
    /* #parent-1:hover #inner-child{
     width: 100%;
    } */
+   .dropdown-menu{
+    margin-top: 8px !important;
+}
+#inner-child_1{
+    margin-top: 0.3px !important;
+    width: 100% ;
+    height: 4px ;
+    background-color: black;
+    transition: 1s;
+}
+#inner-child{
+    width: 0px ;
+    height: 4px ;
+    background-color: black;
+    transition: 1s;
+}
+
+
+#parent_1:hover #inner-child_1{
+    width: 100%;
+
+}
+#parent-1:hover #inner-child{
+    width: 100%;
+}
+
 
    .main{
     width: 100%;
@@ -208,6 +234,23 @@
      
        
    }
+   @media screen and (max-width:1209px){
+    /* #item-hide, #box1{
+        display: none;
+       }
+        #subhead{
+        padding-right: 60px;
+       }  */
+       #div-last{
+        padding: 0px 0px;
+    }
+    
+
+
+
+     
+       
+   }
    @media screen and (max-width:1242px){
     
        #btn{
@@ -237,8 +280,7 @@
 
 
 
-/* 
-@media screen and (max-width:979px){
+ @media screen and (max-width:979px){
    
    
     
@@ -251,11 +293,28 @@
        }
       
 
-    }  */
-
+    }  
+    @media screen and (max-width:768px){
+   
+   #btn{
+    display: none;
+   }
+    
+        /* .pera{
+         font-size: 29px;
+         color: aqua;
+        }
+        #text{
+         font-size: 80px;
+        }
+        */
+ 
+     }  
+ 
     #service{
-        margin: 100px;
-    }
+        margin: 140px;
+}
+    
     #serve{
         display: flex;
         justify-content: center;
@@ -336,12 +395,15 @@
         padding-right: 50px;
     }
     #overlay-out{
+        /* width: 100%;
+        height: 100vh; */
         position: relative;
+        /* position: absolute; */
     }
     
     #rows_1{
         width: 100%;
-        height: 132vh;;
+    height: 132vh;;
         background-color: black;
     }
 
@@ -493,8 +555,65 @@ color: white;
 #taxt{
     font-size: 70px;
 }
+.resize{
+    font-size: 18px;
+}
+#more{
+    position: relative;
+}
+#more::before{
+    position: absolute;
+    content: '';
+    /* right: 0; */
+    width: 100%;
+    /* left: 0; */
+    bottom: -5px;
+    height: 5px ;
+    background-color: red;
+    transition: 1s;
 
-
+}
+#more{
+  
+}
+.blue-overlay{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(93, 0, 255, 0.664);
+}
+#img-end{
+    width: 100%;
+    height: 530px;
+}
+#manege{
+    position: relative;
+    /* padding-top: 500px; */
+  
+}
+#arjes{
+    position: absolute;
+    top: 310px;
+    /* padding-top: 900px; */
+    /* z-index: 0; */
+}
+#inner-contain{
+    padding-top: 300px;
+}
+.style{
+    color: rgba(245, 245, 245, 0.6);
+    transition: 500ms;
+   }
+   .style:hover{
+    color: white;
+   }
+   #last-pera{
+    font-size: 18px;
+   }
+#div-last{
+    padding: 0px 210px;
+}
 
 
     
