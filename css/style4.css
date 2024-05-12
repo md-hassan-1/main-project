@@ -152,6 +152,11 @@
     }
 
 }
+@media screen and (max-width:1200px){
+    #top-manu{
+        display: none;
+    }
+}
 
 .item-4{
    margin: 100px;
