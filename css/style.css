@@ -56,6 +56,11 @@ padding-top: 50px;
   display: block;
    padding-top: 55px;
 }
+
+.display-4{
+  padding-right:58px;
+  /* border: 1px solid black; */
+}
 .size{
  
   font-size: 7px;
@@ -211,6 +216,9 @@ padding-top: 50px;
  }
  
  @media screen and  (max-width:415px){
+  .display-4{
+    padding: 0px;
+  }
   #head-first-2{
     display: block;
     /* border: 1px solid black; */
@@ -234,8 +242,20 @@ padding-top: 50px;
     /* border: 1px solid black; */
     padding-right: 0px;
   }
+  .display-4{
+  margin-right: 10px;
+
+    
+    /* background-color: green; */
+  }
 
  }
+ @media screen and(max-width:429px){
+ .display-4{
+    margin-right: 0px;
+
+ }
+}
  
  @media (max-width:1020px){
   #tem{
@@ -244,9 +264,12 @@ padding-top: 50px;
   #canva{
     display: block;
   }
-  @media  (max-width:1200px) {
+  @media screen and (max-width:1200px) {
     .back-img {
      background-image: url("");
+    }
+    .display-4{
+      padding: 0px;
     }
     
   }
