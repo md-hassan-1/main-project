@@ -25,7 +25,7 @@ form.addEventListener("submit", function(e){
 
     // salect.value=''
 
-    let take = {name:input1.value,email:input2.value,phone:phone.value}
+    let take = [{name:input1.value},{email:input2.value},{phone:phone.value}]
 
 
    
