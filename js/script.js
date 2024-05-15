@@ -13,8 +13,9 @@ let nav = document.querySelector("#nav")
 
 let input1 = document.querySelector("#name")
 let input2 = document.querySelector("#email")
+let phone = document.querySelector("#tel")
 let form = document.querySelector("#fildata")
-let salect = document.querySelector("#salect")
+// let salect = document.querySelector("#salect")
 
 task1=[]
 console.log(task1)
@@ -22,23 +23,24 @@ console.log(task1)
 form.addEventListener("submit", function(e){
     e.preventDefault()
 
-    salect.value=''
+    // salect.value=''
 
-    let take = {name:input1.value,email:input2.value}
-    take = JSON.parse(take)
-    // take =take.split(",")
+    let take = {name:input1.value,email:input2.value,phone:phone.value}
 
+
+   
    
     
     task1.push(take)
    
 
-    localStorage.setItem("deta",task1)
+    localStorage.setItem("deta",JSON.stringify(task1))
 
     console.log(task1)
 
     input1.value=''
     input2.value=''
+    phone.value=''
     
 })
 $("#slick").slick({
