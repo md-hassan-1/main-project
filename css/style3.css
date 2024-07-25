@@ -486,7 +486,17 @@
         border: 1px solid black;
         padding: 20px 10px;
     }
+    .custom{
+        padding: 0px;
+    }
 
+}
+@media (max-width:620px){
+    .inner-custom{
+        width: 100%;
+        border: 1px solid black;
+        padding: 20px 10px;
+    }
 }
 
 
